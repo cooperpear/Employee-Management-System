@@ -23,4 +23,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ## License
-Copyright 2019# homework12
+Copyright 2019 Cooper Pearson
