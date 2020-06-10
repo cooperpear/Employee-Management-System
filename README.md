@@ -1,5 +1,4 @@
 # Employee Management System
-
 Employee Management System takes in user inputs via node inquirer package. It stores the users data inputs into an SQL database. It provides a server.js file that will use mySQL to connect to your SQL database. It then generates a list of databases in table form (in your terminal) and the option to add new data. 
 
 ## Deployed
