@@ -6,8 +6,8 @@ Employee Management System takes in user inputs via node inquirer package. It st
 This is a command line program so it is not deployed. Download the files, install your node packages, and then run (node server.js) to begin user input prompt. Output view to terminal and SQL database GUI.
 
 ## Built With
-Node.js
-Javascript
+Node.js<br>
+Javascript<br>
 SQL
 
 ## Installation & Usages
