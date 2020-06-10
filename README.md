@@ -8,7 +8,8 @@ This is a command line program so it is not deployed. Download the files, instal
 ## Built With
 Node.js<br>
 Javascript<br>
-SQL
+SQL<br>
+mySQL
 
 ## Installation & Usages
 
