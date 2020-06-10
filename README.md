@@ -6,7 +6,9 @@ Employee Management System takes in user inputs via node inquirer package. It st
 This is a command line program so it is not deployed. Download the files, install your node packages, and then run (node server.js) to begin user input prompt. Output view to terminal and SQL database GUI.
 
 ## Built With
-React.js
+Node.js
+Javascript
+SQL
 
 ## Installation & Usages
 
@@ -16,18 +18,17 @@ Use npm install to install your packages.
 Run node server.js to initiate the program.
 
 ## Areas of Expansion
+A browser output via HTML for user view. 
 
 ## Authors
 Cooper Pearson
 
 ## Screenshots
-![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+![Data Schema](https://github.com/cooperpear/Employee-Management-System/blob/master/schema.png?raw=true "Data Schema")
 
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
 
 ## License
 Copyright 2019 Cooper Pearson

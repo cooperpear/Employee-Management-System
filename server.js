@@ -9,8 +9,8 @@ var connection = mysql.createConnection({
     // Your username
     user: "root",
     // Your password
-    password: "8901alool",
-    database: "employeedatabase"
+    password: "",
+    database: ""
 });
 
 connection.connect(function (err) {
@@ -48,7 +48,7 @@ function start() {
                 viewEmployees();
             }
             else if (answer.chooseAction === "Update Employee Roles") {
-                updateRole();    
+                updateRole();
             }
 
             else if (answer.chooseAction === "End program") {
@@ -151,7 +151,7 @@ function addEmployee() {
                 },
                 function (err, res) {
                     if (err) throw err;
-                     console.log("Your employee was created successfully!");
+                    console.log("Your employee was created successfully!");
                     // re-prompt the user 
                     start();
                 }
@@ -159,7 +159,7 @@ function addEmployee() {
 
         })
         .catch(function (err) {
-             console.log(err);
+            console.log(err);
         });
 
 }
@@ -168,17 +168,17 @@ function viewDepartments() {
 
     // console.log("Viewing all departments...\n");
     connection.query("SELECT * FROM department", function (err, res) {
-        
-         console.log(res);
+
+        console.log(res);
 
         if (err) throw err;
         // Log all results of the SELECT statement
-        
+
         // connection.end();
         start();
-    
+
     })
-     .catch (function (err) {
+        .catch(function (err) {
             // console.log(err);
         });
 
@@ -190,7 +190,7 @@ function viewRoles() {
     connection.query("SELECT * FROM role", function (err, res) {
         if (err) throw err;
         // Log all results of the SELECT statement
-         console.log(res);
+        console.log(res);
         // connection.end();
         start();
     });
@@ -198,7 +198,7 @@ function viewRoles() {
 }
 
 function viewEmployees() {
-console.log("inside employee view");
+    console.log("inside employee view");
     console.log("Viewing all employees...\n");
     connection.query("SELECT * FROM employee", function (err, res) {
         if (err) throw err;
@@ -241,7 +241,7 @@ function updateRole() {
                 ],
                 function (err, res) {
                     if (err) throw err;
-                     console.log(res.affectedRows + " roles updated!\n");
+                    console.log(res.affectedRows + " roles updated!\n");
                     start();
                 }
             );
@@ -252,7 +252,7 @@ function updateRole() {
 
         })
         .catch(function (err) {
-             console.log(err);
+            console.log(err);
         });
 
 };
